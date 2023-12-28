@@ -1,3 +1,6 @@
-var s = "test";
-var S = new String("test");
-console.log(s == S);
+// 整型直接量
+0
+3
+10000
+0xff
+0xCAFE011

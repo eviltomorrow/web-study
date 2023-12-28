@@ -14,34 +14,36 @@ index_img:
 
 # 类型、值和变量
 
-JavaScript 的数觉类型分为两类：原始类型（primitive type）和对象类型（object type）。
+1. JavaScript 的数觉类型分为两类：原始类型（primitive type）和对象类型（object type）。
 
-原始类型：
- - 数字
- - 字符串
- - 布尔值
- - null（空）
- - undefined（未定义）
+> 原始类型：
+> - 数字
+> - 字符串
+> - 布尔值
+> - null（空）
+> - undefined（未定义）
 
  null 和 undefined 通常分别代表了各自特殊类型的唯一的成员。
 
-对象类型：
- - 除数字、字符串、布尔值、null 和 undefined 之外
- - 全局对象（global object）
- - “命名值”的无序集合
- - 数组
- - 函数
- - 类（Array、Function、RegExp、Date、Error）
+> 对象类型：
+> - 除数字、字符串、布尔值、null 和 undefined 之外
+> - 全局对象（global object）
+> - “命名值”的无序集合
+> - 数组
+> - 函数
+> - 类（Array、Function、RegExp、Date、Error）
 
-JavaScript 是一种面向对象的语言，数据类型本身可以定义方法来使用值。
+ 如果函数用来初始化（使用 new 运算符）一个新建的对象，我们称之为构造函数（constructor）。每个构造函数定义了一类（class）对象---由构造函数初始化的对象组成的集合。
 
- a.sort();
+2. JavaScript 解释器有自己的内存管理机制，可以自动对内存进行垃圾回收。
 
-只有 JavaScript对象才能拥有方法，数字、字符串和布尔值也可以拥有方法。null 和 undefined 是无法拥有方法的值。
+3. JavaScript 是一种面向对象的语言，数据类型本身可以定义方法来使用值。
 
-JavaScript 可以自由地进行数据类型转换。
+JavaScript 对象、数字、字符串和布尔值可以拥有方法。null 和 undefined 是无法拥有方法的值。
 
-JavaScript 变量是无类型的（untyped）。
+4. JavaScript 可以自由地进行数据类型转换。灵活的类型转换规则对“判断相等”的定义亦有影响。
+
+5. JavaScript 变量是无类型的（untyped）。变量可以被赋予任何类型的值，同样一个变量也可以重新赋予不同类型的值。
 
 ## 3.1 数字
 
@@ -52,7 +54,7 @@ JavaScript 不区分整数值和浮点数值。所有的数字均用浮点数值
 数字直接量，在任何数字直接量前加负号（-）可以得到它们的负值。负号是一元求反运算符，并不是数字直接量语法的组成部分。
 
 ### 3.1.1 整型直接量
-例举：
+eg.
  - 0
  - 3
  - 100000
@@ -61,7 +63,7 @@ JavaScript 不区分整数值和浮点数值。所有的数字均用浮点数值
  - 0377（八进制）部分支持
 
 ### 3.1.2 浮点型直接量
-例举：
+eg.
  - 3.14
  - 2345.789
  - .33333
@@ -69,7 +71,7 @@ JavaScript 不区分整数值和浮点数值。所有的数字均用浮点数值
  - 1.24233E-32
 
 ### 3.1.3 JavaScript 中的算数运算符
-例举：
+eg.
  - (+ , - , * , / , %)
  - Math.pow(2,10)  			// => 2的10幂
  - Math.round(.5)  			// => 1.0
@@ -89,7 +91,7 @@ JavaScript 不区分整数值和浮点数值。所有的数字均用浮点数值
  - Math.log(512)/Math.LN2
  - Math.exp(3)				// => e 的3次幂
 
-JavaScript 中的算术运算在溢出（overlfow）、下溢（underflow）或被零整除时不会报错。
+> JavaScript 中的算术运算在溢出（overlfow）、下溢（underflow）或被零整除时不会报错。
  - 上溢的结果，会返回无穷大，infinity 或 -infinity
  - 下溢的结果，会返回 0 或 -0
  - 被 0 整除，会返回 infinity 或 -infinity
