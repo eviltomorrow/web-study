@@ -88,3 +88,25 @@ var square = function(x) {
 ```
 
 ## 4.4 属性访问表达式
+
+JavaScript 为属性访问定义了两种语法：
+
+expression . identifier
+expression [expression]
+
+```js
+var o = {x:1, y:{z:3}};
+var a = [o, 4, [5,6]];
+o.x;
+o.y.z;
+o["x"];
+a[1];
+a[2]["1"];
+a[0].x;
+```
+
+> 如果对象表达式后跟随一对方括号，则计算方括号内的表达式的值并将它转换为字符串。
+
+## 4.5 调用表达式
+
+JavaScript 中的调用表达式是一种调用（或执行）函数或方法的语法表示。
