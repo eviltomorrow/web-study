@@ -225,3 +225,29 @@ var S = new String(a);
 a == S;     // => true
 a === S;    // => false
 ```
+
+### 3.8.1 转换和相等性
+
+一个值转换为另一个值并不意味着两个值相等。
+
+### 3.8.2 显示类型转换
+eg.
+ - Boolean();
+ - Number();
+ - String();
+ - Object();
+
+如果试图把 null 或 undefined 转换为对象，会抛出类型错误（TypeError）。Object()函数会返回一个新创建的空对象。
+
+### 3.8.3 对象转换为原始值
+
+toString() 方法，它的作用是返回一个反应这个对象的字符串
+
+```javascript
+({x:1, y:2}).toString();
+[1,2,3].toString();
+(function(x) { f(x); }).toString();
+```
+
+valueOf() 方法，它的作用是如果存在任意原始值，它就默认将对象转换为表示它的原始值。
+
