@@ -47,3 +47,87 @@ NaN ** 1; // => 1
 
 const bigInt = 1234567890123456789012345678901234567890n;
 
+// String 类型
+let str1 = "John";
+let str2 = 'Single quotes are ok too';
+let str3 = `can embed another ${str1}`;
+
+// Boolean 类型
+let nameFieldChecked = true;
+let ageFieldChecked = false;
+let isGreater = 4 > 1;
+console.log(isGreater);
+
+// null 值
+let age2 = null;
+console.log(age2);
+let age3;
+age3 = undefined;
+console.log(age3);
+
+// typeof 运算符
+typeof undefined;   // => undefined
+typeof 0;       // => number
+typeof 10n;     // => bigint
+typeof true;    // => boolean
+typeof 'foo';   // => string
+typeof Symbol("id");    // => symbol
+typeof Math;    // => object
+typeof null;    // => object (历史遗留问题)
+typeof alert;   // => function
+
+// 类型转换
+
+// 字符串转换
+let value = true;
+console.log(typeof value);
+value = String(value);
+console.log(typeof value, value);
+value = String(null);
+console.log(typeof value, value);
+value = String(NaN);
+console.log(typeof value, value);
+value = String(undefined);
+console.log(value);
+
+// 数字型转型
+console.log("6" / "2");
+let str = "123";
+console.log(typeof str);
+str = Number(str);
+console.log(typeof str, str);
+/**
+ * undefined    => NaN
+ * null         => 0
+ * true/false   => 1 and 0
+ * string       => number/NaN
+ */
+
+// 布尔型转换
+console.log(Boolean(1));
+console.log(Boolean(0));
+/**
+ * 0, null, undefined, NaN, ""  => false 
+ * 其他值                        => true
+ * "0"," "                      => true
+ */ 
+
+8+2;
+let str4 = "my" + " string";
+console.log(str4);
+
+console.log("1" + 2);       // => 12
+console.log(2 + 2 + "1");   // => 41
+
+let x = 1;
+console.log(typeof +x);
+x = true;
+console.log(typeof +x);
+x = "z";
+console.log(typeof +x, +x);
+
+let apples = "2";
+let oranges = "3";
+console.log(apples + oranges);
+console.log(+apples + +oranges);
+console.log(NaN + 1);
