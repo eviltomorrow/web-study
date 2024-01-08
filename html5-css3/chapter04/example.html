@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>04 文本</title>
+</head>
+
+<body>
+    <h1>4.1 为文本添加段落</h1>
+    <p>说明：要在网页中开始一个新的段落，应该使用 p 元素。</p>
+    <p>元素: &lt;p&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <p>培根说过一句富有哲理的话，阅读使人充实，会谈使人敏捷，写作使人精确。</p>
+        <p>意志是一个强壮的盲人，倚靠在明眼的跛子肩上。</p>
+    </article>
+
+
+
+    <h1>4.2 指定细则</h1>
+    <p>说明: small 表示细则一类的旁注(side comment), “通常包括免责生命、注意事项、法律限制、版权信息等。”</p>
+    <p>元素: &lt;small&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <p>Order now to receive free shipping.</p>
+        <small>(Some restrictions may apply.)</small>
+
+        <footer role="contentinfo">
+            <p><small>&copy; 2013 The super Store. All Rights Reserved.</small></p>
+        </footer>
+    </article>
+
+
+    <h1>4.3 标记重要和强调的文本</h1>
+    <p>说明: strong 元素表示内容的重要性，而 em 则表示内容的着重点(强调)。</p>
+    <p>元素: &lt;strong&gt; 和 &lt;em&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <p><strong>她</strong>很重要，因为太<em>出色</em>，出色到让人<strong><em>害怕</em></strong></p>
+        <p><strong>你我<strong>他</strong></strong></p>
+    </article>
+    <p>&lt;b&gt; 元素表示出于实用目的提醒读者注意的一块文字，不传达任何额外的重要性，也不表示其他的语态和语气，用于如文档摘要里的关键词、评论中的产品名、基于文本的交互式软件中只是操作的文字、文章导语等。</p>
+    <p>&lt;i&gt; 元素表示一块不同于其他文字的文字，具有不同的语态或语气，或其他不同于常规之处，用于如分类名称、技术术语、外语里的惯用词、翻译的散文、西方文字中的船舶名称等。</p>
+    <article>
+        <p>The <b>Liarsa Shepard</b> is a good man.</p>
+        <p>The <i>Liarsa Shepard</i> is a good man.</p>
+    </article>
+
+    <h1>4.4 创建图</h1>
+    <p>说明: html5 通过引入 figure 和 figcaption 来创建图</p>
+    <p>元素: &lt;figure&gt; 和 &lt;figcaption&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <figure>
+            <figcaption>This is a picture</figcaption>
+            <img src="image/imag-01.jpg" width="200" height="200" alt="this is a rabbit"/>
+        </figure>        
+    </article>
+
+    <h1>4.5 指明引用或参考</h1>
+    <p>说明: 使用 cite 元素可以指明对某内容源的引用或参考。例如，戏剧、脚本或图书的标题，歌曲、电影、照片或雕塑的名称，演唱会或音乐会，规范、报纸或法律文件等</p>
+    <p>元素: &lt;cite&gt;</p>
+    <article>
+        <p>He listend to <cite>Abbey Road</cite></p>
+    </article>
+    <p>cite 只用于参考源本身，而不是从中引述的内容。</p>
+
+    <h1>4.6 引述文本</h1>
+    <p>说明: blockquote 元素表示单独存在的引述，它默认显示在新的一行，而 q 元素则用于短的引述，如句子里面的引述。</p>
+    <p>元素: &lt;blockquote&gt; 和 &lt;q&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <blockquote cite="#test">
+            <p>
+                这是一段引述。
+            </p>
+        </blockquote>
+        <p>这里包含一句<q lang="fr">引述</q>内容。</p>
+    </article>
+
+    <h1>4.7 指定时间</h1>
+    <p>time 元素用于标记时间、日期或时间段。</p>
+    <p>元素: &lt;time&gt;</p>
+    <article>
+        <p><strong>样例：</strong></p>
+        <p>The train arrives at <time datetime="08:45:00">08:45</time></p>
+    </article>
+    <p>datetime 属性要符合机器时间格式</p>
+
+    <h1>4.8 解释缩写词</h1>
+    <p>说明：使用 abbr 元素标记缩写词并解释其含义。</p>
+    <p>元素: &lt;abbr&gt;</p>
+    <article>
+        <p>
+            魔兽世界(<abbr title="World of Warcraft">wow</abbr>)
+        </p>
+    </article>
+
+    <h1>4.9 定义术语</h1>
+    <p>说明: 用于首次定义术语通常会对其添加区别于其他文本的格式。</p>
+    <p>元素: &lt;dfn&gt;</p>
+    <article>
+        <p><dfn>Jr.</dfn> is a son with the same full name as his father</p>
+    </article>
+</body>
+
+</html>
